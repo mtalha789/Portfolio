@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talha-Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes skillsTranslate {
+            0%{width: 10%;}
+            100%{width: 70%;}
+        }
+        @keyframes fade {
+            0%{
+                opacity: 0;
+            }
+            70%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-voilet text-[#525252] leading-loose">
+    <div id="nav" class="flex">
+        <button id="navToggle" class="absolute top-2 left-2"><img src="./menu.png" alt="" width="30px"></button>
+        <div id="sidebar" class="text-xl bolder">
+            <a href="#home" ><img src="./download.jpg" alt="" class="h-[20vh]"></a>
+            <a href="#home"  class="underline decoration-sky-500 navLinks flex items-center px-5 hover:bg-[#94a3b8] h-[50px]"><img src="./home.png" alt="" class="w-[20px]"><span class="px-2">Home</span></a>
+            <a href="#about"  class="navLinks decoration-sky-500 flex items-center px-5 hover:bg-[#94a3b8] h-[50px]"><img src="./profile.png" alt="" class="w-[20px]"><span class="px-2">About</span></a>
+            <a href="#skills"  class="navLinks decoration-sky-500 flex items-center px-5 hover:bg-[#94a3b8] h-[50px]"><img src="./assessment.png" alt="" class="w-[20px]"><span class="px-2">Skils</span></a>
+            <a href="#home"  class="navLinks flex items-center decoration-sky-500 px-5 hover:bg-[#94a3b8] h-[50px]"><img src="./projects.jpg" alt="" class="w-[20px]"><span class="px-2">Projects</span></a>
+            
+        </div>
+        <div id="home" class="font-mono bolder text-[#e9d5ff] flex  text-5xl box-border bg-cover p-[15vw] h-[100vh] w-[100%] bg-green-600" >
+            <div class="content">
+                <h1>
+                Hello I'm Talha
+                </h1>
+                <div class="text-5xl">
+                    <span class="px-2">I,m </span><input type="text" disabled class="cursor-auto bg-transparent"  id="skills"></input>
+                </div>
+            </div>
+            <img src="./tal.png" width="1500px" alt="" >
+        </div>
+    </div>
+    
+    <div id="skills" style="animation: fade linear both; animation-timeline: view();animation-range: entry 50% cover 50%;">
+        <div class="w-[80vw] p-8  mx-auto rounded-full  bg-sky-200 shadow-lg m-5 category flex justify-between">
+            <div id="frontEnd" class="w-[30vw] shadow-lg bg-gray-400	 p-3 text-center rounded-2xl text-3xl">Front End</div>
+            <div id="backEnd" class="w-[30vw] shadow-lg p-3 text-center rounded-2xl text-3xl">Back End</div>
+        </div>
+        <ul id="frontendSkills" class="flex flex-wrap justify-around">
+            <li>
+               <div class="w-[400px] h-[5vh] bg-gradient-to-r from-cyan-500 to-blue-500 text-white m-[2vh]">
+                    <div class="flex justify-around"><span>Html</span><span>90%</span></div>
+                    <div class="bg-white h-[20%] w-[350px] mx-5 rounded-l">
+                        <div class="bg-[red] h-[100%] max-w-[315px]" style="animation: skillsTranslate 2s ease-in-out;"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+               <div class="w-[400px] h-[5vh] bg-gradient-to-r from-cyan-500 to-blue-500 text-white m-[2vh]">
+                    <div class="flex justify-around"><span>Css</span><span>80%</span></div>
+                    <div class="bg-white h-[20%] w-[350px] mx-5 rounded-l">
+                        <div class="bg-[red] h-[100%] max-w-[280px]" style="animation: skillsTranslate 2s ease-in-out;"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+               <div class="w-[400px] h-[5vh] bg-gradient-to-r from-cyan-500 to-blue-500 text-white m-[2vh]">
+                    <div class="flex justify-around"><span>Java Script</span><span>95%</span></div>
+                    <div class="bg-white h-[20%] w-[350px] mx-5 rounded-l">
+                        <div class="bg-[red] h-[100%] max-w-[333px]" style="animation: skillsTranslate 2s ease-in-out;"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul id="backendSkills" class="hidden flex flex-wrap justify-around">
+            <li>
+               <div class="w-[400px] h-[5vh] bg-gradient-to-r from-cyan-500 to-blue-500 text-white m-[2vh]">
+                    <div class="flex justify-around"><span>Node JS</span><span>90%</span></div>
+                    <div class="bg-white h-[20%] w-[350px] mx-5 rounded-l">
+                        <div class="bg-[red] h-[100%] max-w-[315px]" style="animation: skillsTranslate 2s ease-in-out;"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+               <div class="w-[400px] h-[5vh] bg-gradient-to-r from-cyan-500 to-blue-500 text-white m-[2vh]">
+                    <div class="flex justify-around"><span>Express</span><span>80%</span></div>
+                    <div class="bg-white h-[20%] w-[350px] mx-5 rounded-l">
+                        <div class="bg-[red] h-[100%] max-w-[280px]" style="animation: skillsTranslate 2s ease-in-out;"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+               <div class="w-[400px] h-[5vh] bg-gradient-to-r from-cyan-500 to-blue-500 text-white m-[2vh]">
+                    <div class="flex justify-around"><span>Mongo DB</span><span>95%</span></div>
+                    <div class="bg-white h-[20%] w-[350px] mx-5 rounded-l">
+                        <div class="bg-[red] h-[100%] max-w-[333px]" style="animation: skillsTranslate 2s ease-in-out;"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div style="animation: skillsTranslate 2s;" class="rounded-2xl max-w-[70vw] rounded-5 h-[6vh] m-10 py-[1vh] px-10   ">HTML 90%</div>
+    
+</body>
+<script src="index.js"></script>
+</html>
